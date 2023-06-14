@@ -46,13 +46,11 @@ namespace Projekt
 
                 con.Close();
 
-                login.Text = "";
-                password.Text = "";
-                if (Count>0)
+                if (Count > 0)
                 {
-                    MainWindow w1 = new MainWindow();
+                    Accout ac = new Accout();
                     this.Close();
-                    w1.Show();
+                    ac.Show();
                 }
                 else
                 {

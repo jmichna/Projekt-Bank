@@ -11,8 +11,8 @@ namespace Projekt
     {
         public int Idlogin { get; set; }
         public DateTime? Date { get; set; }
-        public decimal OldBalance { get; set; }
-        public decimal NewBalance { get; set; }
+        public int OldBalance { get; set; }
+        public int NewBalance { get; set; }
 
         public virtual LoginData IdloginNavigation { get; set; }
     }
