@@ -10,7 +10,7 @@ namespace Projekt
     public partial class Balance
     {
         public int Idlogin { get; set; }
-        public decimal Balance1 { get; set; }
+        public int Balance1 { get; set; }
 
         public virtual LoginData IdloginNavigation { get; set; }
     }

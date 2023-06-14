@@ -55,7 +55,7 @@ namespace Projekt
             }
             catch
             {
-
+                MessageBox.Show("Błąd!");
             }
         }
     }

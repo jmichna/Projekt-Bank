@@ -59,7 +59,7 @@ namespace Projekt
             }
             catch
             {
-
+                MessageBox.Show("Konto utworzone! Uruchom ponownie aplikację!");
             }
         }
 

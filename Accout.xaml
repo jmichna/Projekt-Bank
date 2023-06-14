@@ -11,8 +11,19 @@
         <DataGrid x:Name="dgv" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="550,74,20,74"/>
         <Button Content="Pokaż historię transakcji" HorizontalAlignment="Left" Margin="580,388,0,0" VerticalAlignment="Top" Width="470" FontSize="20" Click="Button_Click"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="345" Margin="10,74,0,0" VerticalAlignment="Top" Width="540">
-            <TextBlock x:Name="siemka" TextWrapping="Wrap" Text="TextBlock" Margin="150,72,99,43"/>
+            <TextBlock x:Name="login_display" TextWrapping="Wrap" Margin="285,9,153,302"/>
         </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="153,84,0,0" TextWrapping="Wrap" Text="Użytkownik:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="158,121,0,0" TextWrapping="Wrap" Text="Stan konta:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="balance_display" HorizontalAlignment="Left" Margin="295,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Margin="130,241,0,0" VerticalAlignment="Top" Width="300" ItemsSource="{Binding names}">
+
+        </ComboBox>
+        <TextBox x:Name="balance_textbox" HorizontalAlignment="Left" Margin="126,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <TextBlock HorizontalAlignment="Left" Margin="202,0,0,0" TextWrapping="Wrap" Text="Wybierz opcję:" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="199,289,0,0" TextWrapping="Wrap" Text="Kwota operacji:" VerticalAlignment="Top"/>
+        <Button Content="Wykonaj operację!" HorizontalAlignment="Left" Margin="126,360,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click_1"/>
+        <Button Content="Odśwież stan konta" HorizontalAlignment="Left" Margin="209,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="32" FontSize="16" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

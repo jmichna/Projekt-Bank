@@ -9,6 +9,7 @@ namespace Projekt
 {
     public partial class History
     {
+        public int Id { get; set; }
         public int Idlogin { get; set; }
         public DateTime? Date { get; set; }
         public int OldBalance { get; set; }
