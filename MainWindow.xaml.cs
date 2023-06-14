@@ -34,9 +34,8 @@ namespace Projekt
             {
                 SqlConnection con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AppData;Integrated Security=True;");
                 con.Open();
-                string check_data = "SELECT * FROM [dbo].[LoginData]";
+                string check_data = "SELECT * FROM [dbo].[LoginData] where Login=@login and Password=@password";
                 SqlCommand cmd = new SqlCommand(check_data, con);
-
 
 
                 cmd.Parameters.AddWithValue("@login", login.Text);

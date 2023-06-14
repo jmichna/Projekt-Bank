@@ -12,7 +12,6 @@ namespace Projekt
         public int Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public bool IsAdmin { get; set; }
 
         public virtual Balance Balance { get; set; }
         public virtual Data Data { get; set; }
